@@ -1,0 +1,86 @@
+.list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: grid;
+  gap: 0.7rem;
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  border: 1px solid var(--panel-border);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.9rem;
+}
+
+.titleRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.index {
+  flex-shrink: 0;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(102, 217, 239, 0.12);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.filename {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.kbName {
+  padding: 0.16rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(130, 245, 196, 0.12);
+  color: var(--accent-strong);
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.score {
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(130, 245, 196, 0.14);
+  color: var(--accent-strong);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.heading {
+  margin: 0;
+  color: var(--text);
+  opacity: 0.92;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.metaItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}

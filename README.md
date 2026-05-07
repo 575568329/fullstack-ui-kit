@@ -2,6 +2,12 @@
 
 React + TypeScript 组件库，聚焦 AI 应用、RAG 工作台、Agent 执行过程和前端复杂状态抽象。
 
+## 安装
+
+```bash
+npm install fullstack-ui-kit
+```
+
 ## 定位
 
 这个库不是通用 UI 大而全方案，而是面向以下场景的组件沉淀：
@@ -15,9 +21,46 @@ React + TypeScript 组件库，聚焦 AI 应用、RAG 工作台、Agent 执行�
 ## 当前组件
 
 - `ChatMessage`
+- `CitationList`
 - `SourceCard`
+- `SourceGroupPanel`
+- `StreamingText`
 - `StepTimeline`
 - `UploadPanel`
+
+## 使用
+
+```tsx
+import { ChatMessage, CitationList, StreamingText } from 'fullstack-ui-kit'
+import type { ChatMessageItem, CitationItem } from 'fullstack-ui-kit'
+
+const message: ChatMessageItem = {
+  id: 'msg-1',
+  role: 'assistant',
+  content: '已命中 3 条来源，准备生成带引用的回答。',
+  status: 'final',
+}
+
+const citations: CitationItem[] = [
+  {
+    id: 'citation-1',
+    index: 1,
+    filename: 'rag-architecture.md',
+    heading: 'Retrieval Pipeline',
+    score: 0.94,
+  },
+]
+
+export function Demo() {
+  return (
+    <>
+      <ChatMessage message={message} />
+      <StreamingText text="正在检索相关文档并生成回答" status="streaming" />
+      <CitationList items={citations} />
+    </>
+  )
+}
+```
 
 ## 本地运行
 
@@ -25,6 +68,16 @@ React + TypeScript 组件库，聚焦 AI 应用、RAG 工作台、Agent 执行�
 npm install
 npm run dev
 ```
+
+## 组件说明
+
+- `ChatMessage`：用于展示用户、助手和工具消息。
+- `CitationList`：用于展示回答末尾的引用列表。
+- `SourceCard`：用于展示单条来源卡片。
+- `SourceGroupPanel`：用于展示按文件聚合后的来源面板。
+- `StreamingText`：用于展示流式生成中的文本状态。
+- `StepTimeline`：用于展示任务步骤和状态。
+- `UploadPanel`：用于展示上传文件状态和重试入口。
 
 ## 设计原则
 
