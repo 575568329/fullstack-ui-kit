@@ -1,0 +1,50 @@
+.message {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  border: 1px solid var(--panel-border);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.message[data-role='user'] {
+  background: linear-gradient(135deg, rgba(102, 217, 239, 0.18), rgba(102, 217, 239, 0.08));
+}
+
+.message[data-role='assistant'] {
+  background: linear-gradient(135deg, rgba(130, 245, 196, 0.16), rgba(130, 245, 196, 0.06));
+}
+
+.message[data-role='tool'] {
+  background: linear-gradient(135deg, rgba(249, 199, 79, 0.14), rgba(249, 199, 79, 0.05));
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.role {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: capitalize;
+}
+
+.status {
+  padding: 0.16rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.content {
+  margin: 0;
+  white-space: pre-wrap;
+  color: var(--text);
+}

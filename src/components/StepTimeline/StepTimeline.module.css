@@ -1,0 +1,60 @@
+.timeline {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.step {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.95rem 1rem;
+  border-radius: 16px;
+  border: 1px solid var(--panel-border);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.description {
+  margin: 0;
+  color: var(--muted);
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.3rem;
+  padding: 0.16rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.status[data-status='pending'] {
+  background: rgba(156, 176, 214, 0.12);
+  color: var(--muted);
+}
+
+.status[data-status='running'] {
+  background: rgba(102, 217, 239, 0.16);
+  color: var(--accent);
+}
+
+.status[data-status='success'] {
+  background: rgba(104, 225, 163, 0.16);
+  color: var(--success);
+}
+
+.status[data-status='error'] {
+  background: rgba(255, 125, 125, 0.14);
+  color: var(--danger);
+}
