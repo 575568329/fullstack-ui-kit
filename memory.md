@@ -1,12 +1,19 @@
 # fullstack-ui-kit 项目记忆
 
-最后更新：2026-05-07
+最后更新：2026-05-08
 
 ## 项目定位
 
 `fullstack-ui-kit` 是一个独立的 React + TypeScript 组件库，重点不是通用 UI 大而全方案，而是沉淀 AI 应用、RAG 工作台、Agent 执行过程和复杂前端状态相关组件。
 
 当前仓库既承担 npm 发布源码，也承担本地可浏览的组件演示站。
+
+## 发布状态
+
+- 已发布版本：`0.1.1`
+- 最近一次发布提交：`55fc799`
+- npm 包说明已补充样式引入、仓库地址、关键词和发布信息
+- 发布时需要手动使用 `npm publish --access public --registry=https://registry.npmjs.org/`
 
 ## 当前阶段
 
@@ -50,3 +57,4 @@
 
 - 独立仓库已绑定 `git@github.com:575568329/fullstack-ui-kit.git`。
 - 需要记住当前页面标题是中性表述 `组件演示站`，不再使用 ElementUI 类比文案。
+- 如果再次发布，先确认 `dist/` 包含 `.d.ts`，再执行打包和发布。
