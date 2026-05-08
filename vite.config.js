@@ -12,6 +12,7 @@ export default defineConfig({
     strictPort: true,
   },
   build: {
+    emptyOutDir: false,
     lib: {
       entry: 'src/index.ts',
       name: 'FullstackUiKit',

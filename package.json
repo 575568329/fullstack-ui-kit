@@ -1,8 +1,25 @@
 {
   "name": "fullstack-ui-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "React components for AI apps, RAG workbenches, and agent execution states.",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:575568329/fullstack-ui-kit.git"
+  },
+  "homepage": "https://www.npmjs.com/package/fullstack-ui-kit",
+  "bugs": {
+    "url": "https://github.com/575568329/fullstack-ui-kit/issues"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "ai",
+    "rag",
+    "agent",
+    "ui-kit"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -p tsconfig.build.json && vite build",
@@ -24,6 +41,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "style": "./dist/style.css",
   "files": [
     "dist"
   ],

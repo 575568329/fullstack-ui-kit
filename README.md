@@ -2,10 +2,22 @@
 
 React + TypeScript 组件库，聚焦 AI 应用、RAG 工作台、Agent 执行过程和前端复杂状态抽象。
 
+## 特点
+
+- 面向 AI 对话、RAG 检索、Agent 链路和异步状态场景。
+- 提供可直接复用的 React 组件和 TypeScript 类型。
+- 包含独立样式文件，适合在业务项目中按需引入。
+
 ## 安装
 
 ```bash
 npm install fullstack-ui-kit
+```
+
+## 引入样式
+
+```ts
+import 'fullstack-ui-kit/dist/style.css'
 ```
 
 ## 定位
@@ -31,6 +43,7 @@ npm install fullstack-ui-kit
 ## 使用
 
 ```tsx
+import 'fullstack-ui-kit/dist/style.css'
 import { ChatMessage, CitationList, StreamingText } from 'fullstack-ui-kit'
 import type { ChatMessageItem, CitationItem } from 'fullstack-ui-kit'
 
@@ -61,6 +74,12 @@ export function Demo() {
   )
 }
 ```
+
+## 发布信息
+
+- 许可证：MIT
+- 仓库：`git@github.com:575568329/fullstack-ui-kit.git`
+- 关键词：`react`、`typescript`、`ai`、`rag`、`agent`、`ui-kit`
 
 ## 本地运行
 
